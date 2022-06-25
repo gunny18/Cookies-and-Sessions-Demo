@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/cookie.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include("./layouts/navbar") %>
+    <h1>Cookies demo</h1>
+    <div>
+      <h3>Features of a Cookie</h3>
+      <ul>
+        <li>
+          A cookie is nothing but a key value pair
+          <p>
+            For Example <strong>"name" : "Paul"</strong> is a cookie with a key
+            of name and a value of Paul
+          </p>
+        </li>
+        <li>
+          Consider a social media registration page, where it asks a user for
+          information like name, age, email address, etc.
+        </li>
+        <li>
+          Most of the social media sites also ask information like our hobbies,
+          things we are interested in, music preferences, etc.
+        </li>
+        <li>
+          All these socail media apps use information like this to design the
+          feeds of a users page based on this information
+        </li>
+        <li>
+          A cookie will be sent to the browser every time we send a request to
+          that web page.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3>Lets create a cookie</h3>
+      <div class="form-signin text-center">
+        <form action="/cookie-app" method="post">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <div class="form-floating">
+            <input
+              name="username"
+              type="text"
+              class="form-control"
+              id="floatingText"
+              placeholder="Username"
+            />
+            <label for="floatingText">Username</label>
+          </div>
+          <div class="form-floating">
+            <input
+              name="age"
+              type="date"
+              class="form-control"
+              id="floatingDate"
+            />
+            <label for="floatingDate">Date of Birth</label>
+          </div>
+          <div class="form-floating">
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              name="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Password</label>
+          </div>
+
+          <div class="checkbox mb-3"></div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">
+            Sign in
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

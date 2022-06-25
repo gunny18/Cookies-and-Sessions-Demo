@@ -1,0 +1,9 @@
+.divimg{
+    width: 500px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.container {
+    padding-top: 40px;
+}

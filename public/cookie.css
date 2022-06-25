@@ -1,0 +1,12 @@
+.form-signin{
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 50%
+}
+
+.form-signin form{
+    margin: 20px;
+    flex-grow: 1;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Cookie</title>
+    <link rel="stylesheet" href="/showCookie.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include("./layouts/navbar") %>
+    <div class="div1">
+      <h1>
+        Now lets take a look at the cookie which was received by the Browser!
+      </h1>
+      <ul class="list-group">
+        <li class="list-group-item">username : <%= cookie.username %></li>
+        <li class="list-group-item">age : <%= cookie.age %></li>
+        <li class="list-group-item">email : <%= cookie.email %></li>
+        <li class="list-group-item">password : <%= signedCookie.password %></li>
+      </ul>
+    </div>
+
+    <div class="div2">
+      <h3>
+        Now that we have successfully sent a cookie,we ask ourselves why do we
+        need sessions and more importantly why we
+        <strong>need to switch to sessions</strong>
+      </h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+          Cookies have a maximum size. Each browser has a limit on how many
+          cookies a domain can send.
+        </li>
+        <li class="list-group-item">
+          Cookies are not secure enough to store data on server side
+        </li>
+        <li class="list-group-item">
+          Now imagine how social media apps with billions of users can store
+          information about each user on their browser using just cookies? The
+          answer is <strong>sessions</strong>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
